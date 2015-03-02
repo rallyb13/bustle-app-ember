@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bustle 2: The Clone of Bustle</title>
+    <script src="libs/jquery-1.11.2.js"></script>
+    <script src="libs/ember-template-compiler-1.10.0.js"></script>
+    <!-- // <script src="libs/handlebars-v3.0.0.js"></script> -->
+    <script src="libs/ember.debug.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="bustle.js"></script>
+    <script src="router.js"></script>
+    <script>
+      EmberHandlebarsLoader.loadTemplates(['books', 'food', 'movies', 'music']);
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us: Awesome</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="css/img/benjaminsbooks.jpg" class="books">
+        <h2>Book Reviews</h2>
+      </div>
+      <div class="col-md-6">
+        <img src="css/img/music.jpg">
+        <h2>Local Concerts</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="css/img/movies.jpg" class="movies">
+        <h2>New Releases</h2>
+      </div>
+
+      <div class="col-md-6">
+        <img src="css/img/food.jpg">
+        <h2>Bake Something, yeah!</h2>
+      </div>
+    </div>
+  </body>
+</html>
