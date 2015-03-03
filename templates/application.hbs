@@ -1,5 +1,5 @@
 <div class="container">
- <nav class="navbar navbar-default" role="navigation">
+ <nav class="navbar navbar-default" role="navigation" {{action "hideMedia" on="mouseLeave"}}>
    <ul class="nav navbar-nav">
      <li>{{#link-to 'home'}}Home{{/link-to}}</li>
      <li>{{#link-to 'books'}}Books{{/link-to}}</li>
@@ -7,6 +7,22 @@
      <li>{{#link-to 'movies'}}Movies{{/link-to}}</li>
      <li>{{#link-to 'music'}}Music{{/link-to}}</li>
    </ul>
+    <div class="social-media"{{action "showMedia" on="mouseEnter"}}>
+      <img src="css/img/twitter.png">
+      <img src="css/img/facebook.png">
+      <img src="css/img/linkedin.png">
+    </div>
+      {{#if isMediaShowing}}
+        <div class="mediaLinks">
+          <a href="twitter.com">twitter</a>
+          <a href="facebook.com">facebook</a>
+          <a href="linkedin.com">linkedin</a>
+        </div>
+      {{/if}}
+
+
+
+
  </nav>
 {{outlet}}
 </div>

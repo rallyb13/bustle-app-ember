@@ -1,22 +1,22 @@
 Bustle.HomeController = Ember.Controller.extend({
-  whichPicture: "css/img/benjaminsbooks.jpg",
+  whichPicture: "css/img/carousel4.jpg",
   actions: {
     switchPicture: function() {
-      var imageArray = ["css/img/benjaminsbooks.jpg", "css/img/food.jpg", "css/img/movies.jpg", "css/img/music.jpg"];
+      var imageArray = ["css/img/carousel4.jpg", "css/img/carousel1.jpg", "css/img/carousel2.jpg", "css/img/carousel3.jpg"];
       var i = imageArray.indexOf(this.get("whichPicture"));
       if ( i<3) {
         this.set('whichPicture', imageArray[i+1]);
       } else {
-        this.set('whichPicture', "css/img/benjaminsbooks.jpg")
+        this.set('whichPicture', "css/img/carousel4.jpg")
       }
     },
     backSwitchPicture: function() {
-      var imageArray = ["css/img/benjaminsbooks.jpg", "css/img/food.jpg", "css/img/movies.jpg", "css/img/music.jpg"];
+      var imageArray = ["css/img/carousel4.jpg", "css/img/carousel1.jpg", "css/img/carousel2.jpg", "css/img/carousel3.jpg"];
       var i = imageArray.indexOf(this.get("whichPicture"));
       if ( i>0) {
         this.set('whichPicture', imageArray[i-1]);
       } else {
-        this.set('whichPicture', "css/img/music.jpg")
+        this.set('whichPicture', "css/img/carousel3.jpg")
       }
     }
   }
